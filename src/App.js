@@ -1,18 +1,16 @@
 import logo from './logo.svg';
 import { Container, Row, Col } from 'react-bootstrap';
+import CSVUploader from './CSVUploader';
 
 import './App.css';
 
-const App = () => {
+function App() {
   return (
-    <Container>
-      <Row>
-        <Col>
-          <h1>Hello, Bootstrap!</h1>
-        </Col>
-      </Row>
-    </Container>
+    <div className="App">
+      <h1>CSV Uploader</h1>
+      <CSVUploader />
+    </div>
   );
-};
+}
 
 export default App;
